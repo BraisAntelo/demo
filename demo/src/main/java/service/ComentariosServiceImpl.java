@@ -9,7 +9,7 @@ import java.util.Optional;
 
 public class ComentariosServiceImpl implements ComentariosService{
     @Autowired
-    ComentariosRepository comentariosRepository;
+    private ComentariosRepository comentariosRepository;
     @Override
     public List<Comentarios>findAll(){return comentariosRepository.findAll();}
 
